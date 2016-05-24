@@ -1,0 +1,140 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>v-Accept</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+        <script src="js/knockout-3.4.0.js" type="text/javascript"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>  
+        <script src="js/webusermodeling.js" type="text/javascript"></script>   
+        
+        
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/vaccept/index.html">UAT Agent Simlation Framework</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Web User Agent Modeling</h1>
+        <p>This prototype was implemented using a simulation based web application test automation framework, that facilitates the automated execution of interactions between simulated web user agents and a target web applications.  The resulting models can then be submitted to a cloud based simulator service which would spawns virtual web user agents that can interact with a targeted web applications.</p>
+        <p>While this prototype does not set out to address all the would be challenges of automated acceptance testing, it does however, effectively illustrates that the basic interactions between a HTML website and it's users, can be standardized in a functional framework that would allowing software testers that do not have programming/scripting skills to benefit from tools designed to augment their testing with automation.</p>
+        <p>This would allow for not just programmers but other key stake holders involved in the iterative delivery of software to benefit from AGILE methodologies, by being equipped with the tools they need to actively model and execute web user test simulations independent of software developers.</p>
+        <p><a class="btn btn-primary btn-lg" href="/vaccept/modeling.html" role="button">Start Modeling Web Users&raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Extending User Stories</h2>
+          <p>The framework builds on the widely accepted AGILE concept of a <b>User Story</b>, which has effectively narrowed the gap between requirements gathering, development and testing by being a common artifact that is used throughout the various stages of the Software Development LIfe Cycle (SDLC).</p>
+          <p>In many frameworks, 'user stories' have widely regarded as 'executable' requirements that enables AGILE development approaches such as Behavior Driven Development (BDD).</p>
+          <p>User story elements such as <b>As a</b> to define a user's ROLE, <b>So that</b> to define a user's BELIEF, <b>Feature</b>  </p>
+          <p>But not without the involvement of a programmer to 'code' the steps that linked to each user story.  Furthermore, the</p> step codes are invariably written by programmers for each unique web application to be tested.</p>
+          <p>While developer's may try to 're-use' snippets and keep the code they write for testing DRY (do not rewrite), there is still much more potential to further reduce re-working and improve efficiency.</p>
+          <p><h4>Mapping User Story Elements to BDI Modelling</h4> At the core of agent based modeling are the conceptual elements of BDI (belief, desire, intent).  User stories contain elements that can be mapped to the BDI.  The framework takes advantage of this, effectively extending the conceptual use of user story elements to cover the basics of the modeling required.</p>
+          <p><a class="btn btn-default" href="/vaccept/modeling.html" role="button">Start Modeling &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Data Instantiation</h2>
+          <p>Preparing and using test data for acceptance tests is always a challenge. The <b>"Given that"</b> and "Background" sections of a user story is meant to facilitate the 'staging' of data, 
+              but given the way that user story 'steps' are widely used today for automated testing, where data declarations are being made in the middle of a step, it invariably results in step definitions that are not 'reusable'.</p>
+          <p>To make tests reusable, the framework posits that all data declarations should be made separately from the step definitions.
+              This endows the simulated user with the ability for example to 'know' his name before being required to enter it on a web page form.</p>
+          <p>This prototype also illustrates how data from external or even third party sources could be integrated into a more comprehensive solution that can 'tell' a modeled web user what it needs to know before step execution. </p>
+          <p><a class="btn btn-default" href="/vaccept/modeling.html" role="button">Start Modeling &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>'True' User Steps</h2>
+          <p>The 'step' modeling feature is where the rubber meets the road in the framework. It represents the critical <b>"When I"</b> prefixed lines of a user story.
+              The intuitive interfaces makes it easy for non-programmers to define what a web user agent should do in specific scenarios. 
+              The prototype also illustrates several seemingly novel concepts that the framework introduces, including:
+            <h4>AGENT ACTUATORS:</h4>
+            <h4>TRUE BLACK BOX TESTING:</h4> When using a web application, real users don't see the attributes and other inner workings of the HTML elements on a web page. Automated behavioral/functional tests should therefore strictly emulate only the capabilities of real users to be a meaningful 'user' test
+            <h4>SPATIAL BROWSER AWARENESS:</h4> When real users are being guided on how to navigate and find specific elements on a web page, they take instruction based on first finding distinct location or unique identifiable visual cues on the web page, then find other elements that they need to interact with using spatially descriptive language such as 'BESIDE', 'BELOW', 'TO THE LEFT' etc.<br>
+                    These spatially useful descriptive terms referred to in the framework as <b>Relative Positions</b> are a key way to provide instructions in step definitions on how a simulated web user can find a specific <b>Target</b> on which to perform an <b>Action</b>
+            <h4>FOCUS ON USER EXPERIENCE:</h4> Web pages can change while the described user experience remains intact. Automated user tests should be able to validate the basic elements of described user experience.</li>
+            </p>
+          <p><a class="btn btn-default" href="/vaccept/modeling.html" role="button">Start Modeling &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>User Based Assertions</h2>
+          <p>To truly simulate user acceptance testing, the framework focuses on facilitating assertions that a real user would be able to determine from just interacting with the resulting web pages after defined steps are executed.</p>
+          <p><h4>AGENT SENSORS:</h4> the framework posits that web users have specific 'sensor' capabilities that make them able to detect what transpires on a web page subsequent to the execution of steps, these include the ability to <b>'SEE'</b>, <b>'HEAR'</b>, and <b>'FEEL'</b> stimuli produces by a web page.</p>
+          <p>The full implementation of all the sensors that the framework proposes goes beyond the scope of this research, but the named capabilities are included with the hope that the open source community will not only contribute to the continued development of the framework to its full potential, but also to fork and customize the framework to meet other needs.</p>
+          <p>This prototype implements the 'SEE' interface of the framework which is currently limited to web page element types and text, but there is great potential to extend this to include seeing properties such as defined 'COLOR' and 'SIZE' descriptions to name a few.</p>
+          <p><a class="btn btn-default" href="/vaccept/modeling.html" role="button">Start Modeling &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Clive Beckford 2016</p>
+      </footer>
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
